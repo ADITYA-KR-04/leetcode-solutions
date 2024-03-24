@@ -12,5 +12,7 @@ class Solution(object):
         for i in range(k):
             if (L[k-i-1]-i)>0:
                 sum+=(L[k-i-1]-i)
+            else:
+                break
         return sum
 
