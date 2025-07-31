@@ -2,7 +2,7 @@ class Solution:
     def rearrangeSticks(self, n: int, k: int) -> int:
         
         MOD = 10**9 + 7
-        dp = [[0]*(k+2) for _ in range(n+2)]
+        dp = [[0]*(k+1) for _ in range(n+1)]
         dp[0][0] = 1
 
         for i in range(1, n+1):
